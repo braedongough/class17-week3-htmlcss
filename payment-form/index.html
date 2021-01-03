@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        <form action="index.html" method="GET">
+            <div class="order-summary">
+                <h1>Order Summary</h1>
+                <div class="row">
+                    <span>Soudfa Plus: 3 months</span>
+                    <span>$33.33 / month</span>
+                </div>
+                <hr />
+                <div class="row"><span>Total</span><span>$100</span></div>
+            </div>
+            <div class="row">
+                <label for="card" class="payment-method">
+                    <span>
+                        <img
+                            class="payment-image"
+                            src="./images/american-express.png"
+                            alt="american-express"
+                        />
+                        <img
+                            class="payment-image"
+                            src="./images/mastercard.png"
+                            alt="mastercard"
+                        />
+                        <img
+                            class="payment-image"
+                            src="./images/visa.png"
+                            alt="visa"
+                        />
+                        Credit / Debit
+                    </span>
+                    <input type="radio" name="payment" id="card" value="card"
+                /></label>
+                <label for="paypal" class="payment-method">
+                    <img
+                        src="./images/pp.png"
+                        alt="paypal logo"
+                        class="payment-image"
+                    />
+                    PayPal
+                    <input
+                        type="radio"
+                        name="payment"
+                        id="paypal"
+                        value="paypal"
+                    />
+                </label>
+            </div>
+            <label for="ccnumber">Card Number</label>
+            <input
+                type="text"
+                minlength="13"
+                maxlength="16"
+                id="ccnumber"
+                placeholder="1234 1234 1234 1234"
+                name="ccnumber"
+            />
+            <label for="expiry">Expiry Date</label>
+            <input
+                type="month"
+                id="expiry"
+                name="expiry"
+                min="2021-01"
+                placeholder="expiry date"
+            />
+            <label for="cvv">Security Code</label>
+            <input
+                type="password"
+                max="4"
+                min="3"
+                name="cvv"
+                id="cvv"
+                placeholder="CVV"
+            />
+            <button type="submit">Buy Now</button>
+            <a href="https://google.com/support">Need Help?</a>
+        </form>
+    </body>
+</html>
